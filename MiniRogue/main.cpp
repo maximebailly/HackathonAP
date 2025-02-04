@@ -1,4 +1,6 @@
 #include <iostream>
+#include <array>
+#include <list>
 #include "SDL.h"
 #include "game.h"
 #include "visuals.h"
@@ -23,7 +25,7 @@ bool handleEvents() {
             }
             if (keyCode == 40) { // Entree
                 // Recommencer une partie
-                cout << "Nouvelle partie" << endl;
+                cout << "Entrée appuyé" << endl;
                 renderState();
             }
         }
@@ -59,15 +61,27 @@ void renderState() {
     // Si le jeu vient de commencer, on appelle la fonction game_init() pour def pieces de depart
     if (tour == 0) {
         // afficher ecran depart
-        SDL_SetRenderDrawColor(renderer, 0xC4, 0xBE, 0xB8, 0xFF);   // Carré beige
-        SDL_Rect rect { .x = 3*BLOCK_SIZE, .y = 3*BLOCK_SIZE, .w = BLOCK_SIZE, .h = BLOCK_SIZE };
-        SDL_RenderFillRect(renderer, &rect); // Envoie le carré au renderer
-        render(); // Fonction en dessous qui affiche
+        // Pour tester la conversion
+        for (int i=0; i<W_HEIGHT; i++) {
+            for (int j=0; j<W_WIDTH; j++) {
+                plateau_decouvert[i][j] = 1; // 0,1,2,3,4,9
+            }
+        }
+
+        // Appeler la fonction qui initalise un plateau
+
+        // Le render
+        dessine_plateau(plateau_decouvert);
+        render();
+
+        change = false; // Changement effectué donc on arrête de boucler sur le rendu graphique
+        tour+=1;
         }
     //Sinon on dessine le plateau
     else {
+        dessine_plateau(plateau_decouvert); // Dessine les éléments du plateau connu par le joueur
+        render();
     }
-
 }
 
 void render() {
@@ -80,7 +94,7 @@ int SDL_main(int argc, char *argv[]) {
     // Initialise SDL et ouvre une fenêtre
     SDL_Init(SDL_INIT_VIDEO);
     SDL_Window *window = SDL_CreateWindow(
-        "Échecs",
+        "MiniRogue",
         SDL_WINDOWPOS_CENTERED,
         SDL_WINDOWPOS_CENTERED,
         W_WIDTH * BLOCK_SIZE,
@@ -95,9 +109,8 @@ int SDL_main(int argc, char *argv[]) {
         // Gestion des touches
         quit = handleEvents();
 
-        if (change == true) {
-            // on met à jour l'état du jeu
-            // on efface l'écran
+        if (change == true) { // Si y'a un changement dans le jeu
+            // on efface l'écran actuel
             SDL_SetRenderDrawColor(renderer, 0, 0, 0, 0xFF);
             SDL_RenderClear(renderer);
             // on "dessine" nos éléments de jeu
@@ -108,7 +121,6 @@ int SDL_main(int argc, char *argv[]) {
     }
 
     // à la fin du jeu on ferme proprement la fenêtre et on libère les ressources utilisées par SDL
-    renderState(); // Pour désallouer textures et autres
     SDL_DestroyWindow(window);
     SDL_Quit();
     return 0 ;
