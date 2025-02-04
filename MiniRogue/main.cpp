@@ -24,9 +24,50 @@ bool handleEvents() {
               return true;
             }
             if (keyCode == 40) { // Entree
-                // Recommencer une partie
+                // Interaction avec environnement
                 cout << "Entrée appuyé" << endl;
-                renderState();
+            }
+            if (keyCode == 79) { //Droite
+                // Si mouvement possible
+                if (is_valid(joueur_x+1,joueur_y)) {
+                    // TODO : remplacer l'ancienne case du joueur par la case du fond qui va bien
+                    // Donc il faut avoir une matrice qui ne contient que les fonds ? Sans le perso ni les items, ennemis etc
+                    plateau_decouvert[joueur_y][joueur_x]= 0;
+                    // Maj pos joueur
+                    joueur_x+=1;
+                    plateau_decouvert[joueur_y][joueur_x]= 9;
+                    change = true;
+                }
+            }
+            if (keyCode == 80) { //Gauche
+                // Si mouvement possible
+                if (is_valid(joueur_x-1,joueur_y)) {
+                    plateau_decouvert[joueur_y][joueur_x]= 0;
+                    // Maj pos joueur
+                    joueur_x-=1;
+                    plateau_decouvert[joueur_y][joueur_x]= 9;
+                    change = true;
+                }
+            }
+            if (keyCode == 81) { //Bas
+                // Si mouvement possible
+                if (is_valid(joueur_x,joueur_y+1)) {
+                    plateau_decouvert[joueur_y][joueur_x]= 0;
+                    // Maj pos joueur
+                    joueur_y+=1;
+                    plateau_decouvert[joueur_y][joueur_x]= 9;
+                    change = true;
+                }
+            }
+            if (keyCode == 82) { //Haut
+                // Si mouvement possible
+                if (is_valid(joueur_x,joueur_y-1)) {
+                    plateau_decouvert[joueur_y][joueur_x]= 0;
+                    // Maj pos joueur
+                    joueur_y-=1;
+                    plateau_decouvert[joueur_y][joueur_x]= 9;
+                    change = true;
+                }
             }
         }
         else if (SDL_MOUSEBUTTONDOWN == e.type) {

@@ -11,6 +11,9 @@
 inline int tour = 0;
 inline bool change = true;
 inline bool game_on = false ;
-int joueur_x, joueur_y;
+inline int joueur_x = 2, joueur_y = 2;
 
 inline std::array<std::array<int, W_WIDTH>, W_HEIGHT> plateau_decouvert;
+
+//Fonctions
+bool is_valid(int arrx, int arry) ;
