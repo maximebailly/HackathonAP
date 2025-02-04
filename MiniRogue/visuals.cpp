@@ -1,3 +1,4 @@
+#include "game.h"
 using namespace std;
 #include "visuals.h"
 
@@ -54,6 +55,14 @@ void dessine_plateau(array<array<int, W_WIDTH>, W_HEIGHT> plateau) {
                 SDL_Rect rect { .x = i*BLOCK_SIZE, .y = j*BLOCK_SIZE, .w = BLOCK_SIZE, .h = BLOCK_SIZE };
                 SDL_RenderFillRect(renderer, &rect); // Envoie le carré au renderer
             }
+        }
+    }
+}
+
+void decouvre() {
+    for (int i = joueur_y-1; i <= joueur_y+1; i++) {
+        for (int j = joueur_x-1; j <= joueur_x+1; j++) {
+            matrice_decouverte[i][j] = 1;
         }
     }
 }

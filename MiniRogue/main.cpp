@@ -32,40 +32,44 @@ bool handleEvents() {
                 if (is_valid(joueur_x+1,joueur_y)) {
                     // TODO : remplacer l'ancienne case du joueur par la case du fond qui va bien
                     // Donc il faut avoir une matrice qui ne contient que les fonds ? Sans le perso ni les items, ennemis etc
-                    plateau_decouvert[joueur_y][joueur_x]= 0;
+                    plateau[joueur_y][joueur_x]= 1;
                     // Maj pos joueur
                     joueur_x+=1;
-                    plateau_decouvert[joueur_y][joueur_x]= 9;
+                    decouvre();
+                    plateau[joueur_y][joueur_x]= 9;
                     change = true;
                 }
             }
             if (keyCode == 80) { //Gauche
                 // Si mouvement possible
                 if (is_valid(joueur_x-1,joueur_y)) {
-                    plateau_decouvert[joueur_y][joueur_x]= 0;
+                    plateau[joueur_y][joueur_x]= 1;
                     // Maj pos joueur
                     joueur_x-=1;
-                    plateau_decouvert[joueur_y][joueur_x]= 9;
+                    decouvre();
+                    plateau[joueur_y][joueur_x]= 9;
                     change = true;
                 }
             }
             if (keyCode == 81) { //Bas
                 // Si mouvement possible
                 if (is_valid(joueur_x,joueur_y+1)) {
-                    plateau_decouvert[joueur_y][joueur_x]= 0;
+                    plateau[joueur_y][joueur_x]= 1;
                     // Maj pos joueur
                     joueur_y+=1;
-                    plateau_decouvert[joueur_y][joueur_x]= 9;
+                    decouvre();
+                    plateau[joueur_y][joueur_x]= 9;
                     change = true;
                 }
             }
             if (keyCode == 82) { //Haut
                 // Si mouvement possible
                 if (is_valid(joueur_x,joueur_y-1)) {
-                    plateau_decouvert[joueur_y][joueur_x]= 0;
+                    plateau[joueur_y][joueur_x]= 1;
                     // Maj pos joueur
                     joueur_y-=1;
-                    plateau_decouvert[joueur_y][joueur_x]= 9;
+                    decouvre();
+                    plateau[joueur_y][joueur_x]= 9;
                     change = true;
                 }
             }
@@ -81,7 +85,7 @@ bool handleEvents() {
             int case_x, case_y ;
         }
 
-            // Le jeu n'est pas encore lancé
+        // Le jeu n'est pas encore lancé
         else {
             int x, y ;
             if (SDL_BUTTON_LEFT == e.button.button) {
@@ -101,18 +105,28 @@ bool updateState() {
 void renderState() {
     // Si le jeu vient de commencer, on appelle la fonction game_init() pour def pieces de depart
     if (tour == 0) {
-        // afficher ecran depart
+        // Creer la matrice de découverte
+        for (int i=0; i<W_HEIGHT; i++) {
+            for (int j=0; j<W_WIDTH; j++) {
+                // Rien n'est encore découvert
+                matrice_decouverte[i][j] = 0;
+            }
+        }
+        decouvre();
+
+
         // Pour tester la conversion
         for (int i=0; i<W_HEIGHT; i++) {
             for (int j=0; j<W_WIDTH; j++) {
-                plateau_decouvert[i][j] = 1; // 0,1,2,3,4,9
+                plateau[i][j] = 1; // 0,1,2,3,4,9
             }
         }
 
         // Appeler la fonction qui initalise un plateau
 
         // Le render
-        dessine_plateau(plateau_decouvert);
+        plateau_affiche = produit_termeterme(plateau,matrice_decouverte);
+        dessine_plateau(plateau_affiche);
         render();
 
         change = false; // Changement effectué donc on arrête de boucler sur le rendu graphique
@@ -120,7 +134,8 @@ void renderState() {
         }
     //Sinon on dessine le plateau
     else {
-        dessine_plateau(plateau_decouvert); // Dessine les éléments du plateau connu par le joueur
+        plateau_affiche = produit_termeterme(plateau,matrice_decouverte);
+        dessine_plateau(plateau_affiche); // Dessine les éléments du plateau connu par le joueur
         render();
     }
 }

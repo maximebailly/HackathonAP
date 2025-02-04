@@ -13,7 +13,9 @@ inline bool change = true;
 inline bool game_on = false ;
 inline int joueur_x = 2, joueur_y = 2;
 
-inline std::array<std::array<int, W_WIDTH>, W_HEIGHT> plateau_decouvert;
+inline std::array<std::array<int, W_WIDTH>, W_HEIGHT> matrice_decouverte;
+inline std::array<std::array<int, W_WIDTH>, W_HEIGHT> plateau;
+inline std::array<std::array<int, W_WIDTH>, W_HEIGHT> plateau_affiche;
 
 //Fonctions
 bool is_valid(int arrx, int arry) ;

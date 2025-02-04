@@ -7,7 +7,7 @@
 
 bool is_valid(int arrx, int arry) {
     // si c'est du vide ou un mur on return false, interdit
-    if (plateau_decouvert[arry][arrx] == '0' || plateau_decouvert[arry][arrx] == '2') {
+    if (plateau_affiche[arry][arrx] == '0' || plateau_affiche[arry][arrx] == '2') {
         return false;
     }
     return (arrx >= 0 && arrx < W_WIDTH && arry >= 0 && arry < W_HEIGHT);

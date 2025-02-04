@@ -18,6 +18,7 @@ const int BLOCK_SIZE = 20; // Pour un meilleur affichage des chiffres et des let
 // Fonctions
 void dessine_plateau(array<array<int, W_WIDTH>, W_HEIGHT> plateau);
 array<array<int, W_WIDTH>, W_HEIGHT> produit_termeterme(array<array<int, W_WIDTH>, W_HEIGHT> mat1, array<array<int, W_WIDTH>, W_HEIGHT> mat2);
+void decouvre();
 
 
 
