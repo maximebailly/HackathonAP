@@ -2,7 +2,7 @@
 #include <iostream>
 #include <array>
 #include <vector>
-
+/*
 // Définir les dimensions de la matrice
 const int W_WIDTH = 45;
 const int W_HEIGHT = 30;
@@ -60,7 +60,6 @@ void ajout_piece(std::array<std::array<int, W_WIDTH>, W_HEIGHT>& plateau) {
 }
 
 // item méchant, que dans une salle. Si on le rencontre, le jeu est fini
-
 void mechant(std::array<std::array<int, W_WIDTH>, W_HEIGHT>& plateau){
     std::random_device rd;
     std::mt19937 gen(rd());
@@ -321,3 +320,4 @@ int main() {
 
     return 0;
 }
+*/

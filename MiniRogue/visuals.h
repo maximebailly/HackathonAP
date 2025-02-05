@@ -11,6 +11,7 @@ using namespace std;
 
 // le renderer est utilisé par SDL et passé à toutes les fonctions
 inline SDL_Renderer *renderer;
+inline int alpha;
 const int W_WIDTH = 45;
 const int W_HEIGHT = 30;
 const int BLOCK_SIZE = 20; // Pour un meilleur affichage des chiffres et des lettres

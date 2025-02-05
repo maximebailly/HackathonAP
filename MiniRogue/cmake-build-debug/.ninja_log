@@ -1,66 +1,85 @@
 # ninja log v6
-8	70	7603671035351846	CMakeFiles/MiniRogue.dir/visuals.cpp.obj	249a79321f9ece16
-17	1606	7603678806149205	CMakeFiles/MiniRogue.dir/main.cpp.obj	b65a9b0171d439f4
-24	79	7603678806219265	CMakeFiles/MiniRogue.dir/game.cpp.obj	1b9faf0676b2c4
-14	73	7603680508271117	CMakeFiles/MiniRogue.dir/visuals.cpp.obj	d3b2361d14501b87
-19	75	7603680508309468	CMakeFiles/MiniRogue.dir/game.cpp.obj	5d156a2012a36293
-9	1616	7603680508209462	CMakeFiles/MiniRogue.dir/main.cpp.obj	f3fa195f4e27af52
-1617	4879	7603680524293987	C:/Users/maxim/OneDrive/Études/Mines Paris/Info/Hackathon AP/HackathonAP/MiniRogue/bin/MiniRogue.exe	481404e5f503b1f3
-8	1658	7603684559178558	CMakeFiles/MiniRogue.dir/main.cpp.obj	f3fa195f4e27af52
-1659	3878	7603684575693562	C:/Users/maxim/OneDrive/Études/Mines Paris/Info/Hackathon AP/HackathonAP/MiniRogue/bin/MiniRogue.exe	481404e5f503b1f3
-10	71	7603689075611092	CMakeFiles/MiniRogue.dir/visuals.cpp.obj	d3b2361d14501b87
-72	2076	7603689076241671	C:/Users/maxim/OneDrive/Études/Mines Paris/Info/Hackathon AP/HackathonAP/MiniRogue/bin/MiniRogue.exe	481404e5f503b1f3
-21	83	7603697742787004	CMakeFiles/MiniRogue.dir/game.cpp.obj	5d156a2012a36293
-9	1654	7603697742676899	CMakeFiles/MiniRogue.dir/main.cpp.obj	f3fa195f4e27af52
-8	185	7603698496268746	CMakeFiles/MiniRogue.dir/visuals.cpp.obj	d3b2361d14501b87
-186	2196	7603698498050290	C:/Users/maxim/OneDrive/Études/Mines Paris/Info/Hackathon AP/HackathonAP/MiniRogue/bin/MiniRogue.exe	481404e5f503b1f3
-9	1825	7603705606081176	CMakeFiles/MiniRogue.dir/main.cpp.obj	f3fa195f4e27af52
-14	1834	7603705606141232	CMakeFiles/MiniRogue.dir/visuals.cpp.obj	d3b2361d14501b87
-9	1700	7603705832924865	CMakeFiles/MiniRogue.dir/visuals.cpp.obj	d3b2361d14501b87
-1702	3866	7603705849850239	C:/Users/maxim/OneDrive/Études/Mines Paris/Info/Hackathon AP/HackathonAP/MiniRogue/bin/MiniRogue.exe	481404e5f503b1f3
-15	1699	7603717264231874	CMakeFiles/MiniRogue.dir/visuals.cpp.obj	d3b2361d14501b87
-8	1804	7603717597751288	CMakeFiles/MiniRogue.dir/main.cpp.obj	f3fa195f4e27af52
-14	1821	7603717597811348	CMakeFiles/MiniRogue.dir/visuals.cpp.obj	d3b2361d14501b87
-1821	4107	7603717615877755	C:/Users/maxim/OneDrive/Études/Mines Paris/Info/Hackathon AP/HackathonAP/MiniRogue/bin/MiniRogue.exe	481404e5f503b1f3
-14	1763	7603719652750940	CMakeFiles/MiniRogue.dir/visuals.cpp.obj	d3b2361d14501b87
-8	1645	7603719825856999	CMakeFiles/MiniRogue.dir/main.cpp.obj	f3fa195f4e27af52
-1647	3965	7603719842241804	C:/Users/maxim/OneDrive/Études/Mines Paris/Info/Hackathon AP/HackathonAP/MiniRogue/bin/MiniRogue.exe	481404e5f503b1f3
-9	1638	7603723385701966	CMakeFiles/MiniRogue.dir/main.cpp.obj	f3fa195f4e27af52
-1639	3799	7603723402006774	C:/Users/maxim/OneDrive/Études/Mines Paris/Info/Hackathon AP/HackathonAP/MiniRogue/bin/MiniRogue.exe	481404e5f503b1f3
-10	1661	7603723546256695	CMakeFiles/MiniRogue.dir/main.cpp.obj	f3fa195f4e27af52
-1662	3827	7603723562771708	C:/Users/maxim/OneDrive/Études/Mines Paris/Info/Hackathon AP/HackathonAP/MiniRogue/bin/MiniRogue.exe	481404e5f503b1f3
-8	1702	7603724602943308	CMakeFiles/MiniRogue.dir/visuals.cpp.obj	d3b2361d14501b87
-1703	3865	7603724619888707	C:/Users/maxim/OneDrive/Études/Mines Paris/Info/Hackathon AP/HackathonAP/MiniRogue/bin/MiniRogue.exe	481404e5f503b1f3
-8	1657	7603724747574274	CMakeFiles/MiniRogue.dir/main.cpp.obj	f3fa195f4e27af52
-1658	3883	7603724764079366	C:/Users/maxim/OneDrive/Études/Mines Paris/Info/Hackathon AP/HackathonAP/MiniRogue/bin/MiniRogue.exe	481404e5f503b1f3
-9	1672	7603724826075504	CMakeFiles/MiniRogue.dir/main.cpp.obj	f3fa195f4e27af52
-1673	3720	7603724842710712	C:/Users/maxim/OneDrive/Études/Mines Paris/Info/Hackathon AP/HackathonAP/MiniRogue/bin/MiniRogue.exe	481404e5f503b1f3
-9	1834	7603724909140967	CMakeFiles/MiniRogue.dir/main.cpp.obj	f3fa195f4e27af52
-1836	3975	7603724927407479	C:/Users/maxim/OneDrive/Études/Mines Paris/Info/Hackathon AP/HackathonAP/MiniRogue/bin/MiniRogue.exe	481404e5f503b1f3
-9	1707	7603726224742564	CMakeFiles/MiniRogue.dir/main.cpp.obj	f3fa195f4e27af52
-1709	3896	7603726241738008	C:/Users/maxim/OneDrive/Études/Mines Paris/Info/Hackathon AP/HackathonAP/MiniRogue/bin/MiniRogue.exe	481404e5f503b1f3
-9	1594	7603726816522562	CMakeFiles/MiniRogue.dir/main.cpp.obj	f3fa195f4e27af52
-1595	3781	7603726832386978	C:/Users/maxim/OneDrive/Études/Mines Paris/Info/Hackathon AP/HackathonAP/MiniRogue/bin/MiniRogue.exe	481404e5f503b1f3
-10	1670	7603728263189579	CMakeFiles/MiniRogue.dir/main.cpp.obj	f3fa195f4e27af52
-1671	3876	7603728279804683	C:/Users/maxim/OneDrive/Études/Mines Paris/Info/Hackathon AP/HackathonAP/MiniRogue/bin/MiniRogue.exe	481404e5f503b1f3
-8	1657	7603729309451527	CMakeFiles/MiniRogue.dir/main.cpp.obj	f3fa195f4e27af52
-1659	3843	7603729325956611	C:/Users/maxim/OneDrive/Études/Mines Paris/Info/Hackathon AP/HackathonAP/MiniRogue/bin/MiniRogue.exe	481404e5f503b1f3
-9	1644	7603730067397907	CMakeFiles/MiniRogue.dir/main.cpp.obj	f3fa195f4e27af52
-1645	3825	7603730083752687	C:/Users/maxim/OneDrive/Études/Mines Paris/Info/Hackathon AP/HackathonAP/MiniRogue/bin/MiniRogue.exe	481404e5f503b1f3
-10	1714	7603738651748374	CMakeFiles/MiniRogue.dir/main.cpp.obj	f3fa195f4e27af52
-1715	3959	7603738668803956	C:/Users/maxim/OneDrive/Études/Mines Paris/Info/Hackathon AP/HackathonAP/MiniRogue/bin/MiniRogue.exe	481404e5f503b1f3
-9	1645	7603739095276756	CMakeFiles/MiniRogue.dir/main.cpp.obj	f3fa195f4e27af52
-1647	3828	7603739111651635	C:/Users/maxim/OneDrive/Études/Mines Paris/Info/Hackathon AP/HackathonAP/MiniRogue/bin/MiniRogue.exe	481404e5f503b1f3
-12	1731	7603748910365320	CMakeFiles/MiniRogue.dir/main.cpp.obj	f3fa195f4e27af52
-18	1745	7603748910425380	CMakeFiles/MiniRogue.dir/game.cpp.obj	5d156a2012a36293
-1746	4000	7603748927701075	C:/Users/maxim/OneDrive/Études/Mines Paris/Info/Hackathon AP/HackathonAP/MiniRogue/bin/MiniRogue.exe	481404e5f503b1f3
-9	1763	7603758908648364	CMakeFiles/MiniRogue.dir/main.cpp.obj	f3fa195f4e27af52
-15	1798	7603758908708325	CMakeFiles/MiniRogue.dir/visuals.cpp.obj	d3b2361d14501b87
-20	1816	7603758908758371	CMakeFiles/MiniRogue.dir/game.cpp.obj	5d156a2012a36293
-1816	4219	7603758926714692	C:/Users/maxim/OneDrive/Études/Mines Paris/Info/Hackathon AP/HackathonAP/MiniRogue/bin/MiniRogue.exe	481404e5f503b1f3
-8	1618	7603759276698665	CMakeFiles/MiniRogue.dir/main.cpp.obj	f3fa195f4e27af52
-1619	3647	7603759292813229	C:/Users/maxim/OneDrive/Études/Mines Paris/Info/Hackathon AP/HackathonAP/MiniRogue/bin/MiniRogue.exe	481404e5f503b1f3
-9	1621	7603759706935368	CMakeFiles/MiniRogue.dir/main.cpp.obj	f3fa195f4e27af52
-1622	3810	7603759723080039	C:/Users/maxim/OneDrive/Études/Mines Paris/Info/Hackathon AP/HackathonAP/MiniRogue/bin/MiniRogue.exe	481404e5f503b1f3
-9	1697	7603760449297656	CMakeFiles/MiniRogue.dir/visuals.cpp.obj	d3b2361d14501b87
-1698	3867	7603760466183001	C:/Users/maxim/OneDrive/Études/Mines Paris/Info/Hackathon AP/HackathonAP/MiniRogue/bin/MiniRogue.exe	481404e5f503b1f3
+1589	3594	7604846167511363	C:/Users/maxim/OneDrive/Études/Mines Paris/Info/Hackathon AP/HackathonAP/MiniRogue/bin/MiniRogue.exe	481404e5f503b1f3
+9	1587	7604846151717010	CMakeFiles/MiniRogue.dir/main.cpp.obj	f3fa195f4e27af52
+15	1738	7604843399189218	CMakeFiles/MiniRogue.dir/visuals.cpp.obj	d3b2361d14501b87
+19	1964	7604843399229260	CMakeFiles/MiniRogue.dir/game.cpp.obj	5d156a2012a36293
+13	1874	7604847231971816	CMakeFiles/MiniRogue.dir/game.cpp.obj	5d156a2012a36293
+1875	3878	7604847250587095	C:/Users/maxim/OneDrive/Études/Mines Paris/Info/Hackathon AP/HackathonAP/MiniRogue/bin/MiniRogue.exe	481404e5f503b1f3
+10	1988	7604847930504604	CMakeFiles/MiniRogue.dir/game.cpp.obj	5d156a2012a36293
+1989	4008	7604847950302596	C:/Users/maxim/OneDrive/Études/Mines Paris/Info/Hackathon AP/HackathonAP/MiniRogue/bin/MiniRogue.exe	481404e5f503b1f3
+9	1896	7604852794896703	CMakeFiles/MiniRogue.dir/main.cpp.obj	f3fa195f4e27af52
+1897	3894	7604852813775564	C:/Users/maxim/OneDrive/Études/Mines Paris/Info/Hackathon AP/HackathonAP/MiniRogue/bin/MiniRogue.exe	481404e5f503b1f3
+9	2044	7604853584053819	CMakeFiles/MiniRogue.dir/main.cpp.obj	f3fa195f4e27af52
+2046	4067	7604853604426995	C:/Users/maxim/OneDrive/Études/Mines Paris/Info/Hackathon AP/HackathonAP/MiniRogue/bin/MiniRogue.exe	481404e5f503b1f3
+9	1646	7604855099397077	CMakeFiles/MiniRogue.dir/visuals.cpp.obj	d3b2361d14501b87
+1647	3696	7604855115787288	C:/Users/maxim/OneDrive/Études/Mines Paris/Info/Hackathon AP/HackathonAP/MiniRogue/bin/MiniRogue.exe	481404e5f503b1f3
+10	1691	7604855626530592	CMakeFiles/MiniRogue.dir/visuals.cpp.obj	d3b2361d14501b87
+1692	3777	7604855643355789	C:/Users/maxim/OneDrive/Études/Mines Paris/Info/Hackathon AP/HackathonAP/MiniRogue/bin/MiniRogue.exe	481404e5f503b1f3
+12	1877	7604855914226760	CMakeFiles/MiniRogue.dir/main.cpp.obj	f3fa195f4e27af52
+1878	3909	7604855932883876	C:/Users/maxim/OneDrive/Études/Mines Paris/Info/Hackathon AP/HackathonAP/MiniRogue/bin/MiniRogue.exe	481404e5f503b1f3
+9	1827	7604856312803713	CMakeFiles/MiniRogue.dir/main.cpp.obj	f3fa195f4e27af52
+1829	3841	7604856331004705	C:/Users/maxim/OneDrive/Études/Mines Paris/Info/Hackathon AP/HackathonAP/MiniRogue/bin/MiniRogue.exe	481404e5f503b1f3
+10	1629	7604856964723427	CMakeFiles/MiniRogue.dir/visuals.cpp.obj	d3b2361d14501b87
+1631	3655	7604856980923870	C:/Users/maxim/OneDrive/Études/Mines Paris/Info/Hackathon AP/HackathonAP/MiniRogue/bin/MiniRogue.exe	481404e5f503b1f3
+14	1748	7604859095965932	CMakeFiles/MiniRogue.dir/visuals.cpp.obj	d3b2361d14501b87
+19	1965	7604859096005978	CMakeFiles/MiniRogue.dir/game.cpp.obj	5d156a2012a36293
+9	1967	7604859095905964	CMakeFiles/MiniRogue.dir/main.cpp.obj	f3fa195f4e27af52
+1967	4007	7604859115479066	C:/Users/maxim/OneDrive/Études/Mines Paris/Info/Hackathon AP/HackathonAP/MiniRogue/bin/MiniRogue.exe	481404e5f503b1f3
+14	1743	7604859997141099	CMakeFiles/MiniRogue.dir/visuals.cpp.obj	d3b2361d14501b87
+9	1917	7604859997081039	CMakeFiles/MiniRogue.dir/main.cpp.obj	f3fa195f4e27af52
+18	1984	7604859997181129	CMakeFiles/MiniRogue.dir/game.cpp.obj	5d156a2012a36293
+1984	4018	7604860016834182	C:/Users/maxim/OneDrive/Études/Mines Paris/Info/Hackathon AP/HackathonAP/MiniRogue/bin/MiniRogue.exe	481404e5f503b1f3
+10	1931	7604860645941185	CMakeFiles/MiniRogue.dir/main.cpp.obj	f3fa195f4e27af52
+1932	3971	7604860665168736	C:/Users/maxim/OneDrive/Études/Mines Paris/Info/Hackathon AP/HackathonAP/MiniRogue/bin/MiniRogue.exe	481404e5f503b1f3
+9	1738	7604867215743324	CMakeFiles/MiniRogue.dir/visuals.cpp.obj	d3b2361d14501b87
+1739	3792	7604867233045728	C:/Users/maxim/OneDrive/Études/Mines Paris/Info/Hackathon AP/HackathonAP/MiniRogue/bin/MiniRogue.exe	481404e5f503b1f3
+10	1624	7604867489989520	CMakeFiles/MiniRogue.dir/visuals.cpp.obj	d3b2361d14501b87
+1625	3679	7604867506144435	C:/Users/maxim/OneDrive/Études/Mines Paris/Info/Hackathon AP/HackathonAP/MiniRogue/bin/MiniRogue.exe	481404e5f503b1f3
+15	7359	7604868763071444	CMakeFiles/MiniRogue.dir/visuals.cpp.obj	d3b2361d14501b87
+9	7589	7604868763011470	CMakeFiles/MiniRogue.dir/main.cpp.obj	f3fa195f4e27af52
+20	7590	7604868763121497	CMakeFiles/MiniRogue.dir/game.cpp.obj	5d156a2012a36293
+7590	11140	7604868838819176	C:/Users/maxim/OneDrive/Études/Mines Paris/Info/Hackathon AP/HackathonAP/MiniRogue/bin/MiniRogue.exe	481404e5f503b1f3
+9	1649	7604869506262641	CMakeFiles/MiniRogue.dir/visuals.cpp.obj	d3b2361d14501b87
+1651	3678	7604869522677862	C:/Users/maxim/OneDrive/Études/Mines Paris/Info/Hackathon AP/HackathonAP/MiniRogue/bin/MiniRogue.exe	481404e5f503b1f3
+9	1891	7604870984433029	CMakeFiles/MiniRogue.dir/main.cpp.obj	f3fa195f4e27af52
+1892	3891	7604871003265402	C:/Users/maxim/OneDrive/Études/Mines Paris/Info/Hackathon AP/HackathonAP/MiniRogue/bin/MiniRogue.exe	481404e5f503b1f3
+9	1631	7604871739384265	CMakeFiles/MiniRogue.dir/visuals.cpp.obj	d3b2361d14501b87
+1632	3640	7604871755603973	C:/Users/maxim/OneDrive/Études/Mines Paris/Info/Hackathon AP/HackathonAP/MiniRogue/bin/MiniRogue.exe	481404e5f503b1f3
+8	1951	7604872887422002	CMakeFiles/MiniRogue.dir/main.cpp.obj	f3fa195f4e27af52
+1952	3940	7604872906854957	C:/Users/maxim/OneDrive/Études/Mines Paris/Info/Hackathon AP/HackathonAP/MiniRogue/bin/MiniRogue.exe	481404e5f503b1f3
+8	1862	7604873656344913	CMakeFiles/MiniRogue.dir/main.cpp.obj	f3fa195f4e27af52
+1864	3855	7604873674901910	C:/Users/maxim/OneDrive/Études/Mines Paris/Info/Hackathon AP/HackathonAP/MiniRogue/bin/MiniRogue.exe	481404e5f503b1f3
+15	1785	7604874162931391	CMakeFiles/MiniRogue.dir/visuals.cpp.obj	d3b2361d14501b87
+9	2009	7604874162881345	CMakeFiles/MiniRogue.dir/main.cpp.obj	f3fa195f4e27af52
+19	2065	7604874162981350	CMakeFiles/MiniRogue.dir/game.cpp.obj	5d156a2012a36293
+2065	4132	7604874183443648	C:/Users/maxim/OneDrive/Études/Mines Paris/Info/Hackathon AP/HackathonAP/MiniRogue/bin/MiniRogue.exe	481404e5f503b1f3
+9	1690	7604874492402188	CMakeFiles/MiniRogue.dir/visuals.cpp.obj	d3b2361d14501b87
+1692	3666	7604874509229235	C:/Users/maxim/OneDrive/Études/Mines Paris/Info/Hackathon AP/HackathonAP/MiniRogue/bin/MiniRogue.exe	481404e5f503b1f3
+9	1657	7604875261984149	CMakeFiles/MiniRogue.dir/visuals.cpp.obj	d3b2361d14501b87
+1658	3677	7604875278474817	C:/Users/maxim/OneDrive/Études/Mines Paris/Info/Hackathon AP/HackathonAP/MiniRogue/bin/MiniRogue.exe	481404e5f503b1f3
+9	1630	7604877148206125	CMakeFiles/MiniRogue.dir/visuals.cpp.obj	d3b2361d14501b87
+1631	3625	7604877164421266	C:/Users/maxim/OneDrive/Études/Mines Paris/Info/Hackathon AP/HackathonAP/MiniRogue/bin/MiniRogue.exe	481404e5f503b1f3
+10	1643	7604877973490875	CMakeFiles/MiniRogue.dir/visuals.cpp.obj	d3b2361d14501b87
+1644	3631	7604877989840724	C:/Users/maxim/OneDrive/Études/Mines Paris/Info/Hackathon AP/HackathonAP/MiniRogue/bin/MiniRogue.exe	481404e5f503b1f3
+10	1653	7604879373380131	CMakeFiles/MiniRogue.dir/visuals.cpp.obj	d3b2361d14501b87
+1654	3673	7604879389830311	C:/Users/maxim/OneDrive/Études/Mines Paris/Info/Hackathon AP/HackathonAP/MiniRogue/bin/MiniRogue.exe	481404e5f503b1f3
+9	1678	7604880532331183	CMakeFiles/MiniRogue.dir/visuals.cpp.obj	d3b2361d14501b87
+1679	3675	7604880549038978	C:/Users/maxim/OneDrive/Études/Mines Paris/Info/Hackathon AP/HackathonAP/MiniRogue/bin/MiniRogue.exe	481404e5f503b1f3
+9	1652	7604880879459479	CMakeFiles/MiniRogue.dir/visuals.cpp.obj	d3b2361d14501b87
+1653	3693	7604880895899487	C:/Users/maxim/OneDrive/Études/Mines Paris/Info/Hackathon AP/HackathonAP/MiniRogue/bin/MiniRogue.exe	481404e5f503b1f3
+9	1641	7604882113254394	CMakeFiles/MiniRogue.dir/visuals.cpp.obj	d3b2361d14501b87
+1643	3681	7604882129589148	C:/Users/maxim/OneDrive/Études/Mines Paris/Info/Hackathon AP/HackathonAP/MiniRogue/bin/MiniRogue.exe	481404e5f503b1f3
+10	1859	7604884243000367	CMakeFiles/MiniRogue.dir/main.cpp.obj	f3fa195f4e27af52
+1860	3873	7604884261511139	C:/Users/maxim/OneDrive/Études/Mines Paris/Info/Hackathon AP/HackathonAP/MiniRogue/bin/MiniRogue.exe	481404e5f503b1f3
+9	1837	7604885143778528	CMakeFiles/MiniRogue.dir/main.cpp.obj	f3fa195f4e27af52
+1838	3845	7604885162070220	C:/Users/maxim/OneDrive/Études/Mines Paris/Info/Hackathon AP/HackathonAP/MiniRogue/bin/MiniRogue.exe	481404e5f503b1f3
+9	1986	7604887269471509	CMakeFiles/MiniRogue.dir/main.cpp.obj	f3fa195f4e27af52
+1988	4006	7604887289256353	C:/Users/maxim/OneDrive/Études/Mines Paris/Info/Hackathon AP/HackathonAP/MiniRogue/bin/MiniRogue.exe	481404e5f503b1f3
+9	1857	7604887699452782	CMakeFiles/MiniRogue.dir/main.cpp.obj	f3fa195f4e27af52
+1859	3864	7604887717949717	C:/Users/maxim/OneDrive/Études/Mines Paris/Info/Hackathon AP/HackathonAP/MiniRogue/bin/MiniRogue.exe	481404e5f503b1f3
+10	1810	7604887943528008	CMakeFiles/MiniRogue.dir/main.cpp.obj	f3fa195f4e27af52
+1811	3800	7604887961549942	C:/Users/maxim/OneDrive/Études/Mines Paris/Info/Hackathon AP/HackathonAP/MiniRogue/bin/MiniRogue.exe	481404e5f503b1f3
+10	1929	7604889058920077	CMakeFiles/MiniRogue.dir/main.cpp.obj	f3fa195f4e27af52
+1930	3910	7604889078117956	C:/Users/maxim/OneDrive/Études/Mines Paris/Info/Hackathon AP/HackathonAP/MiniRogue/bin/MiniRogue.exe	481404e5f503b1f3
+10	1967	7604890628978844	CMakeFiles/MiniRogue.dir/main.cpp.obj	f3fa195f4e27af52
+1968	3952	7604890648557469	C:/Users/maxim/OneDrive/Études/Mines Paris/Info/Hackathon AP/HackathonAP/MiniRogue/bin/MiniRogue.exe	481404e5f503b1f3

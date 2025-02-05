@@ -1,6 +1,7 @@
 #include <iostream>
 #include <array>
 #include <list>
+#include <random>
 #include "SDL.h"
 #include "game.h"
 #include "visuals.h"
@@ -23,16 +24,25 @@ bool handleEvents() {
             if (keyCode == SDL_SCANCODE_ESCAPE) {
               return true;
             }
+
+            // Interaction avec environnement
             if (keyCode == 40) { // Entree
-                // Interaction avec environnement
-                cout << "Entrée appuyé" << endl;
+                cout << plateau_depart[joueur_y][joueur_x] << endl;
+                if (plateau_depart[joueur_y][joueur_x] == 8) { // Pièce d'or
+                    cout << "Vous ramassez une piece d'or !" << endl;
+                    plateau_depart[joueur_y][joueur_x] = 1;
+                }
+                else if (plateau_depart[joueur_y][joueur_x] == 7 || plateau_depart[joueur_y-1][joueur_x] == 7
+                    || plateau_depart[joueur_y+1][joueur_x] == 7 || plateau_depart[joueur_y][joueur_x-1] == 7
+                    || plateau_depart[joueur_y][joueur_x+1] == 7) { // Méchant
+                    cout << "Vous tapez l'ennemi !!" << endl;
+                    plateau_depart[joueur_y][joueur_x] = 1;
+                }
             }
             if (keyCode == 79) { //Droite
                 // Si mouvement possible
                 if (is_valid(joueur_x+1,joueur_y)) {
-                    // TODO : remplacer l'ancienne case du joueur par la case du fond qui va bien
-                    // Donc il faut avoir une matrice qui ne contient que les fonds ? Sans le perso ni les items, ennemis etc
-                    plateau[joueur_y][joueur_x]= 1;
+                    plateau[joueur_y][joueur_x]= plateau_depart[joueur_y][joueur_x];
                     // Maj pos joueur
                     joueur_x+=1;
                     decouvre();
@@ -43,7 +53,7 @@ bool handleEvents() {
             if (keyCode == 80) { //Gauche
                 // Si mouvement possible
                 if (is_valid(joueur_x-1,joueur_y)) {
-                    plateau[joueur_y][joueur_x]= 1;
+                    plateau[joueur_y][joueur_x]= plateau_depart[joueur_y][joueur_x];
                     // Maj pos joueur
                     joueur_x-=1;
                     decouvre();
@@ -54,7 +64,7 @@ bool handleEvents() {
             if (keyCode == 81) { //Bas
                 // Si mouvement possible
                 if (is_valid(joueur_x,joueur_y+1)) {
-                    plateau[joueur_y][joueur_x]= 1;
+                    plateau[joueur_y][joueur_x]= plateau_depart[joueur_y][joueur_x];
                     // Maj pos joueur
                     joueur_y+=1;
                     decouvre();
@@ -65,7 +75,7 @@ bool handleEvents() {
             if (keyCode == 82) { //Haut
                 // Si mouvement possible
                 if (is_valid(joueur_x,joueur_y-1)) {
-                    plateau[joueur_y][joueur_x]= 1;
+                    plateau[joueur_y][joueur_x]= plateau_depart[joueur_y][joueur_x];
                     // Maj pos joueur
                     joueur_y-=1;
                     decouvre();
@@ -112,17 +122,24 @@ void renderState() {
                 matrice_decouverte[i][j] = 0;
             }
         }
-        decouvre();
+        // Creer le plateau de jeu
+        plateau = Plateau(plateau);
+        plateau_travail(plateau);
+        plateau_depart = plateau;
 
+        // Place aléatoirement le joueur dans une salle
+        std::random_device rd;
+        std::mt19937 gen(rd());
+        std::uniform_int_distribution<> distrib_height(0, W_HEIGHT - 1);
+        std::uniform_int_distribution<> distrib_width(0, W_WIDTH - 1);
 
-        // Pour tester la conversion
-        for (int i=0; i<W_HEIGHT; i++) {
-            for (int j=0; j<W_WIDTH; j++) {
-                plateau[i][j] = 1; // 0,1,2,3,4,9
-            }
+        while (plateau[joueur_y][joueur_x] != 1) {
+            joueur_y = distrib_height(gen);
+            joueur_x = distrib_width(gen);
         }
 
-        // Appeler la fonction qui initalise un plateau
+        // Eclairer ce qui se trouve autour du joueur
+        decouvre();
 
         // Le render
         plateau_affiche = produit_termeterme(plateau,matrice_decouverte);
