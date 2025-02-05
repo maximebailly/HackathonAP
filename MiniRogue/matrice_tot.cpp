@@ -1,13 +1,14 @@
-// partie où l'on crée la matrice totale
-
-#include <array>
-#include <iostream>
 #include <random>
+#include <iostream>
+#include <array>
 #include <vector>
 
 // Définir les dimensions de la matrice
 const int W_WIDTH = 45;
 const int W_HEIGHT = 30;
+
+const int nb_pieces = 10;
+const int nb_mechant = 3;
 
 // Fonction pour générer une matrice remplie de zéros
 std::array<std::array<int, W_WIDTH>, W_HEIGHT> Plateau()
@@ -41,6 +42,41 @@ void placeRectangle(std::array<std::array<int, W_WIDTH>, W_HEIGHT>& plateau, int
     }
 }
 
+void ajout_piece(std::array<std::array<int, W_WIDTH>, W_HEIGHT>& plateau) {
+    std::random_device rd;
+    std::mt19937 gen(rd());
+    std::uniform_int_distribution<> distrib_height(0, W_HEIGHT - 1);
+    std::uniform_int_distribution<> distrib_width(0, W_WIDTH - 1);
+
+    for (int i = 0; i < nb_pieces; ++i) {
+        int a = 0;
+        int b = 0;
+        do {
+            a = distrib_height(gen);
+            b = distrib_width(gen);
+        } while (plateau[a][b] != 1 && plateau[a][b] != 3);
+        plateau[a][b] = 8;
+    }
+}
+
+// item méchant, que dans une salle. Si on le rencontre, le jeu est fini
+
+void mechant(std::array<std::array<int, W_WIDTH>, W_HEIGHT>& plateau){
+    std::random_device rd;
+    std::mt19937 gen(rd());
+    std::uniform_int_distribution<> distrib_height(0, W_HEIGHT - 1);
+    std::uniform_int_distribution<> distrib_width(0, W_WIDTH - 1);
+
+    for (int i = 0; i < nb_mechant; ++i) {
+        int A = 0;
+        int B = 0;
+        do {
+            A = distrib_height(gen);
+            B = distrib_width(gen);
+        } while (plateau[A][B] != 1 && plateau[A][B] != 3);
+        plateau[A][B] = 7;
+    }
+}
 
 // Fonction réalisant le plateau de travail (non aléatoirement)
 void plateau_travail (std::array<std::array<int, W_WIDTH>, W_HEIGHT>& plateau){
@@ -263,6 +299,9 @@ void plateau_travail (std::array<std::array<int, W_WIDTH>, W_HEIGHT>& plateau){
     plateau[21][44] = 3;
     plateau[20][44] = 3;
     plateau[19][44] = 3;
+
+    mechant(plateau);
+    ajout_piece(plateau);
     
     return ;
 }
@@ -279,3 +318,6 @@ int main() {
         }
         std::cout << std::endl;
     }
+
+    return 0;
+}
